@@ -1,0 +1,52 @@
+baseurl = "https://brb3.org/"
+languageCode = "en-us"
+title = "brb3"
+theme = "m10c-edit"
+googleAnalytics = "UA-31681523-1"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+enableEmoji = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+[[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    author = "Bobby Burden III"
+    description = "Personal website & blog of Bobby Burden III. Software developer, amateur radio nerd, yadda yadda."
+    avatar = "https://s.gravatar.com/avatar/22793c7a69b55e363052c07763d1e044?s=160&r=g"
+
+[params.style]
+    darkestColor = "#335070"
+    darkColor = "#212121"
+    lightColor = "#f5e3e0"
+    lightestColor = "#f5f5f5"
+    primaryColor = "#fff"
+
+[[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/brb3/"
+
+[[params.social]]
+    name = "devanooga"
+    url = "https://devanooga.com"
+
+[[params.social]]
+    name = "rss"
+    url = "/index.xml"
