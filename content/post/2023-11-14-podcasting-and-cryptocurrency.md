@@ -20,8 +20,8 @@ If there was a way to marry these two things together, a simple RSS feed and _mu
 to access content without time consuming downloads or tying up phone lines.
 
 # So What Even is RSS?
-Really Simple Syndication, or RSS[^1], is an XML document that provides a computer-readable way to check for newly published
-content. A simple RSS file might look like this:
+Really Simple Syndication, or RSS[^1], is an XML document that provides a computer-readable way to check for newly
+published content. A simple RSS file might look like this:
 
 ```xml
 <rss version="2.0">

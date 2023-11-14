@@ -1,31 +1,35 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    <p>
-      I'm a Software Developer living in Ringgold, Georgia with my wife Nicki.
-    </p>
-    <p>
-      I focus on C#, Ruby, and PHP development on Linux (and some C# on Windows).
-    </p>
-    <p>
-      In my free time, I work on personal projects, or play with amateur radio or video games.
-      Also, I help run a community of local developers called devanooga. You’re welcome to come join us on slack!
-    </p>
-    <p>
-      If you'd like to contact me, the easiest way is via <a href="mailto:bobby@brb3.org">email</a>.
-    </p>
-    <h1>Blog Posts</h1>
-    <ul class="posts-list">
-      {{ range $index, $element := .Paginator.Pages }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
+<h1>{{ .Title }}</h1>
+<p>
+    My name is <span class="p-name"><span class="p-given-name">Bobby</span> <span class="p-family-name">Burden III.
+    I am a Software Developer living in Ringgold, Georgia with my wife Nicki. The easiest way to get in touch
+    with me is to shoot me an <a href="mailto:bobby@brb3.org" rel="me" class="u-email">email</a>.
+</p>
+
+<p>
+    Previously, I worked for Shopify on the Shopify Fulfillment Network, making things in TypeScript and Go. Before
+    that I worked for UPS, primarily in C# and PHP.
+</p>
+
+<p>
+    In my work and personal projects, I focus primarily on C# or Go.
+</p>
+
+<p>
+    In my free time, I am an amateur radio operator and use the callsign W1BRB. Also, I run a community of local
+    developers called <a href="https://devanooga.org/">devanooga</a>.
+</p>
+<h1>Blog Posts</h1>
+<ul class="posts-list">
+    {{ range $index, $element := .Paginator.Pages }}
+    <li class="posts-list-item">
+        <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }} {{ .ReadingTime }} min read -
             {{ .PublishDate.Format "Jan 2, 2006" }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{ partial "pagination.html" $ }}
-  </article>
+        </span>
+    </li>
+    {{ end }}
+</ul>
+{{ partial "pagination.html" $ }}
 {{ end }}
