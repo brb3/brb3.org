@@ -1,6 +1,6 @@
 ---
 title: FSF Membership
-author: Bobby Burden III
+author: brb3
 date: '2019-01-28'
 categories:
   - meta

@@ -1,6 +1,6 @@
 ---
 title: Vim Lineage
-author: Bobby Burden III
+author: brb3
 date: '2020-04-24'
 categories:
   - editors
@@ -16,7 +16,7 @@ For many trades, knowing your tool so well that it's transparent between you and
 
 But our story for how `vim` came to be starts with Unix, and more precisely with `ed`, the standard editor.
 
-# Who is Ed?
+## Who is Ed?
 
 In the Unix userland, there are many tools that we all expect to just be there: `cat`, `cp`, `dd`, `ls`, and so on. GNU calls this set of tools the ["coreutils"](http://git.savannah.gnu.org/cgit/coreutils.git/tree/src). But when Ken Thompson was developing Unix, he saw that three things were needed for development in Unix: an assembler, editor, and shell. In 1969, he developed `ed` to fit the role of the editor in his equation.
 
@@ -119,7 +119,7 @@ By mid-1972, Unix had 10 installations, and development was happening with `ed`.
 
 That leads us nicely into the next chapter in the saga. Another Bell Labs creation: `sed`.
 
-# Yea, what he sed
+## Yea, what he sed
 
 By 1974, Lee E. McMahon working at Bell Labs in New Jersey had developed `sed`. What he called a "Non-interactive Text Editor". `sed` gets its name from being a _stream_ editor.
 
@@ -162,7 +162,7 @@ THU 23 APR 2020 09:46:25 AM EDT
 
 In this example, we are taking the output of `date` and editing with `sed`. We are using a regular expression that matches all lowercase letters and converting them to their uppercase equivelant. The `g` at the end says to do it _globally_. Without that `g` switch, it would stop executing the regex after the first match. This shows that we don't have to write the output of `date` to disk first to manipulate it.
 
-# The EXtended Editor and the original eVIl editor
+## The EXtended Editor and the original eVIl editor
 
 By 1976, Bill Joy had began writing a "new" line editor for Unix called `ex`. This time for the first BSD release, 1BSD. Of course `ex` didn't live in a vacuum. `em` was another editor developed in the early 70s that was meant to utilize video terminals. To me, this influence seems to be what sparked the ideas that lead up to the eventual creation `vi`.
 `vi` and `ex` are closely tied together. On my machine, the `vi` command is a symlink to `ex` for example.
@@ -178,7 +178,7 @@ lrwxrwxrwx 1 root root 2 Nov 13 13:09 /usr/bin/vi -> ex
 
 If you've ever been curious about the usage of the `<ESC>` and `h j k l` keys in `vi`, look no further than the keyboard for the [ADM-3A](https://en.wikipedia.org/wiki/ADM-3A) terminal that Bill Joy used at the time. You'll see that the `<ESC>` key sits where your `<TAB>` key most likely sits today, and the `h j k l` keys have arrows on them that correspond to the cardinal directions that they represent in `vi`.
 
-# Improving on a Classic
+## Improving on a Classic
 
 In 1987, Tim Thompson was using an Amiga ST. He developed a clone of `vi` called "Stevie" which was an abbreviation of "ST Editor for VI Enthusiasts". Bram Moolenaar, based on this work, began developing `vim` for the Amiga in 1988 with an initial public release in 1991.
 
@@ -188,6 +188,6 @@ As you can see, the evolution of these tools has a long-lasting legacy. Each ite
 
 Today, `vim` is still in active development, with the latest release at time of writing being Vim 8.2, released in December of 2019. With projects like [Neovim](https://neovim.io/) being actively developed, the lineage of `ed` is alive and well, and the next 50 years of `ed` or `vi` (or however you see it) will continue to see improvements and new users.
 
-# Conclusion
+## Conclusion
 
 This was a _very_ brief history of Vim's lineage, and doesn't touch on the influence on (and of) POSIX, Emacs, or any of the other editors and programmers in the story. I hope you've learned a bit about your tools. Now get out there and use 'em!

@@ -1,8 +1,9 @@
 ---
 title: Podcasting and Cryptocurrency
-author: Bobby Burden III
+author: brb3
 date: '2023-11-14'
-categories:
+summary:
+tags:
   - podcasting
   - cryptocurrency
   - decentralization
@@ -19,7 +20,7 @@ At that time, transferring large video or audio files across the web was much mo
 If there was a way to marry these two things together, a simple RSS feed and _multimedia_, more people would be able
 to access content without time consuming downloads or tying up phone lines.
 
-# So What Even is RSS?
+## So What Even is RSS?
 Really Simple Syndication, or RSS[^1], is an XML document that provides a computer-readable way to check for newly
 published content. A simple RSS file might look like this:
 
@@ -54,7 +55,7 @@ content that allowing the user to _check_ without _visiting_ is a bad thing. But
 now, through a Value4Value system (more on this later) and the building blocks set in place over 20 years ago, we can
 reclaim this better Web.
 
-# The Tale of the `<enclosure>`
+## The Tale of the `<enclosure>`
 Back to that `<enclosure>` tag. In 2000, [Adam Curry](https://en.wikipedia.org/wiki/Adam_Curry) described a problem
 to [Dave Winer](https://en.wikipedia.org/wiki/Dave_Winer) and set in motion the changes that eventually created
 podcasting.
@@ -81,8 +82,8 @@ contains.
 Today, this is how Podcast apps work. If you have Podverse installed on your phone, for example, when it refreshes
 your subscriptions it is just reading RSS files and presenting you with the results.
 
-# Advertisers and Podcasting: It's a profit deal
-![It's a profit deal!](/profit_deal.gif)
+## Advertisers and Podcasting: It's a profit deal
+![It's a profit deal!](/images/profit_deal.gif)
 
 If you currently listen to podcasts, you'll know that the overwhelming majority are monetized through advertising.
 It's hard to listen to a podcast (or watch a YouTube video for that matter) without hearing about:
@@ -113,7 +114,7 @@ come with it) but also providing discoverability of streams for the consumer. In
 should be able to stream without a corporate entity between them and their subscribers (which also takes ~50% of
 subscription revenue). But that's a tangent for another blog post (in 3 more years, probably).
 
-# Podcasting 2.0
+## Podcasting 2.0
 
 Revisiting our earlier character of Adam Curry, he currently is working with two different initiatives that bring this
 all together for podcasts:
@@ -182,7 +183,7 @@ care of the work of setting up the proper transactions (using the `address` and 
 Once you get past the initial friction of subscribing to the feed, which is made easier with Podcast Index, and have a
 wallet connected to your podcast client[^4], it is very easy to boost podcasts.
 
-# The missing piece
+## The missing piece
 Ok, I'm trying to tie this all together with an idea that I've been chewing on that relies on a resurgence of RSS feeds
 across the web.
 

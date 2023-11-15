@@ -1,6 +1,6 @@
 ---
 title: Echolink Node
-author: Bobby Burden III
+author: brb3
 date: '2019-10-19'
 categories:
   - ham
