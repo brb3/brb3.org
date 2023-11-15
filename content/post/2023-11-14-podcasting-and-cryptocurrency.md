@@ -188,12 +188,12 @@ Ok, I'm trying to tie this all together with an idea that I've been chewing on t
 across the web.
 
 If we expanded this specification out a bit more to allow a `<channel>` to have a `<channel:value>`, we could provide
-this same Value4Value model to written articles or news stories, or whatever. Imagine reading this article in and RSS
+this same Value4Value model to written articles or news stories, or whatever. Imagine reading this article in an RSS
 reader and saying "well at least he tried" and throwing 5 Satoshi my way. But expand that out further.
 
 Imagine your local newspaper published an RSS feed and you could read the articles and configure your RSS Reader to
 "subscribe" by sending $10/mo. Scale that up to national media outlets and the impact of advertising on our day-to-days
-could be significantly reduced if with distribute the cost of creation among the audience willing to support those
+could be significantly reduced if we distribute the cost of creation among the audience willing to support those
 creators.
 
 It is my belief that given the correct platform where users can subscribe to feeds, read content, and interact with each
