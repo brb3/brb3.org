@@ -41,9 +41,10 @@ published content. A simple RSS file might look like this:
 ```
 
 This can be generated automatically by the site's software (like [Hugo](https://gohugo.io/) does for
-[this site](/index.xml)) and easily consumed by an application that can parse XML.  The entire article contents can be
-included, or just a description (like you see here). Additionally, and this is where the magic for podcasts happen, a
-_media_ file can be included with an `<enclosure>` tag.
+[this site](/index.xml) -- ok, that's an Atom feed, but we're talking about RSS and they serve the same purpose, bear
+with me here) and easily consumed by an application that can parse XML.  The entire article contents can be included, or
+just a description (like you see here). Additionally, and this is where the magic for podcasts happen, a _media_ file
+can be included with an `<enclosure>` tag.
 
 Through this mechanism, just a simple XML file, a user's power on the Web is greatly increased by an RSS Reader (RIP
 Google Reader). No longer does a user need to check 10 sites every morning for new content, or scour through Reddit
@@ -185,7 +186,7 @@ wallet connected to your podcast client[^4], it is very easy to boost podcasts.
 
 ## The missing piece
 Ok, I'm trying to tie this all together with an idea that I've been chewing on that relies on a resurgence of RSS feeds
-across the web.
+across the web (which might be better served by Atom, but regardless).
 
 If we expanded this specification out a bit more to allow a `<channel>` to have a `<channel:value>`, we could provide
 this same Value4Value model to written articles or news stories, or whatever. Imagine reading this article in an RSS
