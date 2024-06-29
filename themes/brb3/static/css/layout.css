@@ -1,7 +1,7 @@
 /* 1rem = 16px by default */
 
 .page {
-    max-width: 64rem;
+    max-width: 80%;
     margin: 1rem auto;
     display: grid;
     grid-template-areas: 
@@ -13,7 +13,7 @@
     grid-row-gap: 2rem;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 65rem) {
     .page {
         grid-template-areas:
           "header  header"

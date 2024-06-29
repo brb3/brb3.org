@@ -149,7 +149,7 @@ int main()
 $
 ```
 
-Here, our regular expression is finding four spaces and replacing that with a `\t` character in `hello.c`. Note that this doesn't write to disk. Instead, it just outputs the results of the changes. We can add ` > hello.c` to the end of our command to _redirect_ the output back to the `hello.c` file and replace the contents completely.
+Here, our regular expression is finding four spaces and replacing that with a `\t` character in `hello.c`. Note that this doesn't write to disk. Instead, it just outputs the results of the changes. We can add `> hello.c` to the end of our command to _redirect_ the output back to the `hello.c` file and replace the contents completely.
 
 And again, this argument to `sed` is working line-at-a-time through the input to arrive at our results. But let's look at another example that takes advantage of `sed` being able to work on streams of data passed in via pipes.
 
@@ -160,7 +160,7 @@ $ date | sed 's/\([a-z]\)/\U\1/g'
 THU 23 APR 2020 09:46:25 AM EDT
 ```
 
-In this example, we are taking the output of `date` and editing with `sed`. We are using a regular expression that matches all lowercase letters and converting them to their uppercase equivelant. The `g` at the end says to do it _globally_. Without that `g` switch, it would stop executing the regex after the first match. This shows that we don't have to write the output of `date` to disk first to manipulate it.
+In this example, we are taking the output of `date` and editing with `sed`. We are using a regular expression that matches all lowercase letters and converting them to their uppercase equivalent. The `g` at the end says to do it _globally_. Without that `g` switch, it would stop executing the regex after the first match. This shows that we don't have to write the output of `date` to disk first to manipulate it.
 
 ## The EXtended Editor and the original eVIl editor
 

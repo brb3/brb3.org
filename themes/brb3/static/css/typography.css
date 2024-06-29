@@ -1,11 +1,12 @@
 /* Fonts */
 :root {
-    --font-monospace: "Fira Mono", monospace;
+    --font-normal: "Open Sans", sans-serif;
+    --font-monospace: "JetBrains Mono", monospace;
 }
 
 body {
-    font-family: var(--font-monospace);
-    font-size: 16px;
+    font-family: var(--font-normal);
+    font-size: 14px;
     line-height: 1.5rem;
 }
 
@@ -143,15 +144,15 @@ pre,
 code, 
 kbd,
 samp {
-    background: var(--inner-bg) !important;
+    background: var(--inner-code) !important;
     font-family: var(--font-monospace);
     color: var(--off-fg);
 }
 
 pre {
     overflow-x: auto;
-    padding: 1.5rem;
-    margin: 0 0 1.5rem 0;
+    padding: .75rem;
+    margin: .25rem;
 }
 
 /* Fix overflow when config markup.highlight.lineNos is true */

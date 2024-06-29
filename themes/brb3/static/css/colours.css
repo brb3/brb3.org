@@ -2,11 +2,12 @@
 	/* Background */
 	--bg: var(--base00);
 	--off-bg: var(--base01);
-	--inner-bg: var(--base02);
+	--inner-bg: var(--base07);
+  --inner-code: var(--base02);
 
 	/* Text */
 	--fg: var(--base05);
-	--off-fg: var(--base04);
+	--off-fg: var(--base06);
 	--muted: var(--base03);
 	--link: var(--base0D);
 	--hover: var(--base0C);

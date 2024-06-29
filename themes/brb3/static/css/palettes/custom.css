@@ -1,4 +1,4 @@
-/* Windows 95 Light by Fergus Collins (https://github.com/C-Fergus) */
+/* Custom pallet based on "Windows 95 Light" by Fergus Collins (https://github.com/C-Fergus) */
 
 :root {
   --base00: #fcfcfc;
@@ -12,9 +12,9 @@
   --base08: #a80000;
   --base09: #fcfc54;
   --base0A: #a85400;
-  --base0B: #00a800;
+  --base0B: #0b2e0b;
   --base0C: #00a8a8;
-  --base0D: #0000a8;
+  --base0D: #000050;
   --base0E: #a800a8;
   --base0F: #54fc54;
 }

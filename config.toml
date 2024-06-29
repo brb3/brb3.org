@@ -1,7 +1,7 @@
 baseurl = "https://brb3.org/"
 languageCode = "en-us"
 title = "brb3"
-theme = "risotto"
+theme = "brb3"
 googleAnalytics = "UA-31681523-1"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 copyright = "© [Bobby Burden III](https://brb3.org)"
@@ -25,7 +25,7 @@ footnotereturnlinkcontents = "↩"
     url = "/index.xml"
 
 [params.theme]
-palette = "dracula"
+palette = "custom"
 
 [params.about]
 title = "brb3.org"
@@ -46,3 +46,10 @@ logo = "images/rocko.png"
     icon = "fa-solid fa-rss"
     title = "rss"
     url = "/index.xml"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    lineNos = true
+    style = 'borland'

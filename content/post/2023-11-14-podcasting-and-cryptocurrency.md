@@ -21,6 +21,7 @@ If there was a way to marry these two things together, a simple RSS feed and _mu
 to access content without time consuming downloads or tying up phone lines.
 
 ## So What Even is RSS?
+
 Really Simple Syndication, or RSS[^1], is an XML document that provides a computer-readable way to check for newly
 published content. A simple RSS file might look like this:
 
@@ -57,6 +58,7 @@ now, through a Value4Value system (more on this later) and the building blocks s
 reclaim this better Web.
 
 ## The Tale of the `<enclosure>`
+
 Back to that `<enclosure>` tag. In 2000, [Adam Curry](https://en.wikipedia.org/wiki/Adam_Curry) described a problem
 to [Dave Winer](https://en.wikipedia.org/wiki/Dave_Winer) and set in motion the changes that eventually created
 podcasting.
@@ -66,6 +68,7 @@ they click... and they wait... And then they can watch the video. Again, at a ti
 were much slower, this could mean several minutes of waiting for a video that's very short and low quality.
 
 But adding an `<enclosure>` tag to RSS would mean that an `<item>` could describe media files.
+
 ```xml
     <item>
         <title>brb3 podcast Episode 1</title>
@@ -84,10 +87,12 @@ Today, this is how Podcast apps work. If you have Podverse installed on your pho
 your subscriptions it is just reading RSS files and presenting you with the results.
 
 ## Advertisers and Podcasting: It's a profit deal
+
 ![It's a profit deal!](/images/profit_deal.gif)
 
 If you currently listen to podcasts, you'll know that the overwhelming majority are monetized through advertising.
 It's hard to listen to a podcast (or watch a YouTube video for that matter) without hearing about:
+
 - Some fancy new underwear!
 - An electric razor you must have or no one will love you
 - AUDIBLE
@@ -119,6 +124,7 @@ subscription revenue). But that's a tangent for another blog post (in 3 more yea
 
 Revisiting our earlier character of Adam Curry, he currently is working with two different initiatives that bring this
 all together for podcasts:
+
 1. [Podcast Index](https://podcastindex.org/) - A free, searchable index of millions of podcasts
 2. [Value4Value](https://value4value.info/) - A monetization avenue for creators
 
@@ -136,6 +142,7 @@ advertising CPM, this could result in more value per consumer than the "traditio
 Where these two pieces collide is in Podcasting 2.0. Through a namespace maintained by Podcast Index, the RSS spec is
 extended to provide additional podcast-specific tags[^3]. A compliant podcast client application can now pay attention
 to a `<podcast:value>` tag in the RSS feed, for example (from the docs):
+
 ```xml
 <podcast:value
     type="lightning"
@@ -185,6 +192,7 @@ Once you get past the initial friction of subscribing to the feed, which is made
 wallet connected to your podcast client[^4], it is very easy to boost podcasts.
 
 ## The missing piece
+
 Ok, I'm trying to tie this all together with an idea that I've been chewing on that relies on a resurgence of RSS feeds
 across the web (which might be better served by Atom, but regardless).
 
