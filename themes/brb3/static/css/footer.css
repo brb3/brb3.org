@@ -5,3 +5,13 @@
 .page__footer p {
     margin: 0;
 }
+
+.page__footer .stats::before {
+  content: "λ";
+  padding-right: 0.5rem;
+  color: orangered;
+}
+
+.page__footer .stats {
+  font-size: x-small;
+}
