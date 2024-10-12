@@ -29,7 +29,7 @@ palette = "custom"
 
 [params.about]
 title = "brb3.org"
-description = "I make stuff for fun sometimes, and write blog posts very infrequently. I mostly write C# and sometimes Go."
+description = "I make stuff for fun sometimes, and write blog posts very infrequently. I mostly write C# and sometimes Go or PHP."
 logo = "images/rocko.png"
 
 [[params.socialLinks]]

@@ -9,8 +9,8 @@
         <header class="post__header">
             <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
             <p class="post__meta">
-                {{ .Params.author }},
-                <span class="date">{{ .Date.Format "2 January 2006" }}</span>
+                <span class="date">{{ .Date.Format "2 January 2006" }}</span> -
+                {{ printf "Reading time: %d minutes" .ReadingTime }}
             </p>
         </header>
     </article>

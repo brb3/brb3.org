@@ -1,4 +1,10 @@
 {{ define "main" }}
     {{ .Content }}
+    {{ range first 1 (where site.RegularPages "Type" "post") }}
+        <h2>Latest Post</h2>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        <br />
+        <span class="date">{{ .Date.Format "2 January 2006" }}</span> -
+        {{ printf "Reading time: %d minutes" .ReadingTime }}
+    {{ end }}
 {{ end }}
-
